@@ -1,0 +1,94 @@
+.callout {
+    position: absolute;
+    margin: 18px 0;    
+    padding: 5px;
+    z-index:99;
+    /*width:300px;*/
+    text-align:center;
+    border: 1px solid #7992B0;
+    background-color: #8F8F8F;
+    color:#FFFFFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow:         5px 5px 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    5px 5px 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.callout .notch {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    margin: 0;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #8F8F8F;
+    padding: 0;
+    width: 0;
+    height: 0;     /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;      /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+    z-index:99;
+}
+
+.callout .notch_right{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    margin: 0;
+    border-left: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #8F8F8F;
+    padding: 0;
+    width: 0;
+    height: 0;     /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;      /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+    z-index:99;
+}
+
+.callout .notch_top{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #8F8F8F;
+    padding: 0;
+    width: 0;
+    height: 0;     /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;      /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+    z-index:99;
+}
+
+.callout .notch_left{
+    position: absolute;
+    border-right: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #8F8F8F;
+    padding: 0;
+    width: 0;
+    height: 0;     /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;      /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+    z-index:99;
+}

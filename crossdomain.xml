@@ -1,0 +1,6 @@
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+<allow-access-from domain="picself.cn"/>
+<allow-access-from domain="*.picself.cn"/>
+<site-control permitted-cross-domain-policies="master-only"/>
+<allow-http-request-headers-from domain="*.picself.cn" headers="*" secure="true"/>
+</cross-domain-policy>

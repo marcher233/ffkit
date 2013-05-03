@@ -1,0 +1,30 @@
+name: YOUR_SAE_APP_NAME
+version: 
+cron:
+- description: read direct msg
+  url: alarma/1.php
+  schedule: every 1 min
+- description: send notification
+  url: alarma/2.php
+  schedule: every 1 min
+- description: add new followers
+  url: alarma/3.php
+  schedule: every 10 mins
+- description: avatar update
+  url: avatar/4.php
+  schedule: every 9 mins
+- description: avatar birthday update
+  url: avatar/5.php
+  schedule: every 21 mins
+- description: wubi
+  url: ggtt/6.php
+  schedule: every 1 min
+- description: imhit notification
+  url: imhit/7.php
+  schedule: every 5 mins
+handle:
+- mime: if( path ~ "\.csv$") type "application/vnd.ms-excel"
+- compress:  if ( out_header["Content-type"]=="text/html" ) compress
+- compress:  if ( out_header["Content-type"]=="text/plain" ) compress
+- compress:  if ( out_header["Content-type"] ~ "text/javascript" ) compress
+- compress:  if ( out_header["Content-type"] ~ "application/octet-stream" ) compress
